@@ -1,0 +1,94 @@
+.messageContent {
+    display: flex;
+    font-size: 0.8em;
+    font-weight: 300;
+    padding: 0.8em 1em;
+    width: fit-content;
+    height: fit-content;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 3px 15px;
+    border-radius: 8px 0 8px 8px;
+}
+
+.messageContentResponse {
+    display: flex;
+    font-size: 0.8em;
+    font-weight: 300;
+    padding: 0.8em 1em;
+    width: fit-content;
+    height: fit-content;
+    background: #3765c9;
+    border: none;
+    color: #fff;
+    box-shadow: rgba(32, 112, 198, 0.4);
+    border-radius: 0 8px 8px 8px;
+}
+
+.messageContainer {
+    display: flex;
+    gap: 20px;
+    color: #fff;
+    font-size: 1rem;
+    flex-direction: row-reverse;
+}
+
+.messageContainerResponse {
+    display: flex;
+    gap: 20px;
+    color: #fff;
+    font-size: 1rem;
+    flex-direction: row;
+}
+
+.conversionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    flex: 1;
+    padding: 20px 0;
+    overflow: auto;
+}
+
+.sendMessageForm {
+    padding: 0.5vw 0;
+    display: flex;
+    align-items: center;
+    height: 50%;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.sendMessageInput {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    border: thin;
+    borderRadius: 1%;
+}
+
+.sendMessageSubmit {
+    flex: 0;
+    padding: 0;
+    size: 2.2em;
+    borderRadius: 50%
+}
+
+.sendMessageIcon {
+    fill: black;
+}
+
+.userIcon.before {
+    display: grid;
+    place-content: center;
+    padding: 0.5em;
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+}
+
+
+.mainContainer {
+    width: 50%;
+    margin: 5%;
+}
