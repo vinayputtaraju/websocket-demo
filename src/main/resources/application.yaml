@@ -1,0 +1,9 @@
+server:
+  ssl:
+    key-store: "classpath:server_ssl_keys/server.jks"
+    key-store-password: "password"
+    key-store-type: "JKS"
+    key-password: "password"
+    key-alias: "server"
+    enabled: true
+  port: 443

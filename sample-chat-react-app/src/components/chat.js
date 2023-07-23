@@ -4,7 +4,7 @@ import '../css/Samplechat.css'
 import {IoIosSend} from 'react-icons/io'
 
 function SampleChat() {
-    const [chatBackendUrl, setChatBackendUrl] = useState('ws://localhost:8080/user');
+    const [chatBackendUrl, setChatBackendUrl] = useState('wss://localhost/user');
 
     const [messageHistory, setMessageHistory] = useState([]);
     const {sendMessage, lastMessage, readyState} = useWebSocket(chatBackendUrl);
@@ -14,7 +14,7 @@ function SampleChat() {
     const retryConnection = useCallback(() => {
         const r = Math.floor(Math.random() * 50);
         setChatBackendUrl(chatBackendUrl + '?tempRetry=' + r);
-    }, []);
+    }, [chatBackendUrl]);
 
     useEffect(() => {
         if (lastMessage !== null) {
