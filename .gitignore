@@ -1,3 +1,28 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+sample-chat-react-app/node_modules
+sample-chat-react-app/.pnp
+sample-chat-react-app/.pnp.js
+
+# testing
+sample-chat-react-app/coverage
+
+# production
+sample-chat-react-app/build
+
+# misc
+sample-chat-react-app/DS_Store
+sample-chat-react-app/env.local
+sample-chat-react-app/env.development.local
+sample-chat-react-app/env.test.local
+sample-chat-react-app/env.production.local
+
+sample-chat-react-app/npm-debug.log*
+sample-chat-react-app/yarn-debug.log*
+sample-chat-react-app/yarn-error.log*
+
+
 HELP.md
 .gradle
 build/
